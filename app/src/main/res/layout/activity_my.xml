@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity"
+    android:background="@color/colorPrimary">
+
+    android:inputType="textPersonName"
+    android:text="Enter a Message"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="487dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/btn_enter"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/edit_message"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/btn_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="147dp"
+            android:text="@string/button_send"
+            app:layout_constraintStart_toEndOf="@+id/editText_message"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/btn_newButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btn_enter"
+            android:layout_alignLeft="@id/btn_enter"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_newButton"
+            android:text="Button" />
+
+        <EditText
+            android:id="@+id/editText_newfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText_message"
+            android:layout_alignLeft="@id/editText_message"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="New Text Field"
+            android:layout_toRightOf="@id/editText_message"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+    </RelativeLayout><![CDATA[
+
+
+
+    app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editText_message"
+        app:layout_constraintTop_toTopOf="parent" />
+
+]]>
+</android.support.constraint.ConstraintLayout>
